@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Cartas</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -11,19 +11,55 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <nav class="navbar bg-body-tertiary bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-success">Cartas</a><img /><img
+          src="https://thumbs.gfycat.com/ScholarlyScientificFlickertailsquirrel-max-1mb.gif"
+          height="50"
+          width="300"
+        />
+        />
+        <form class="d-flex w-520" role="search">
+          <input
+            class="form-control me-3 "
+            type="number"
+            min="2"
+            max="52"
+            placeholder="Cartas"
+            aria-label="Search"
+            id="robarinput"
+          />
+          <button
+            class="btn btn-outline-success m-1 w-50"
+            type="button"
+            id="robarboton"
+          >
+            Robar
+          </button>
+          <button
+            class=" btn btn-outline-success m-1"
+            type="button"
+            id="ordenarboton"
+          >
+            Ordenar
+          </button>
+        </form>
       </div>
-    </div>
+    </nav>
+    <div class="row bg-success p-3" id="contieneCartas"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
